@@ -1,5 +1,5 @@
 <map id="MatrixObject" name="MatrixObject">
-<area shape="rect" id="node2" href="$classBlock.html" title="Clase que representa al coche dentro de la matriz. " alt="" coords="5,80,60,107"/>
+<area shape="rect" id="node2" href="$classBlock.html" title="Clase que representa un obstáculo dentro de la matriz. " alt="" coords="5,80,60,107"/>
 <area shape="rect" id="node3" href="$classCar.html" title="Clase que representa al coche dentro de la matriz. " alt="" coords="85,80,127,107"/>
 <area shape="rect" id="node4" href="$classEmpty.html" title="Clase que representa el vacío dentro de la matriz(posiciones transitables). " alt="" coords="152,80,212,107"/>
 <area shape="rect" id="node5" href="$classEnd.html" title="Clase que representa el punto de destino dentro de la matriz. " alt="" coords="237,80,282,107"/>
