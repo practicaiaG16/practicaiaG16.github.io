@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Práctica Inteligencia Artificial: Simulación de Coche Autónomo: Fichero Fuente Track.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica Inteligencia Artificial: Simulación de Coche Autónomo
+   </div>
+   <div id="projectbrief">Simulacíon de un coche autónomo mediante algoritmos de búsqueda.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Track_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Track.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Track_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classTrack.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTrack.html">Track</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classTrack_a1cc93d8a76c776a41580375f28c3418e.html#a1cc93d8a76c776a41580375f28c3418e">   15</a></span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; <a class="code" href="classTrack_a1cc93d8a76c776a41580375f28c3418e.html#a1cc93d8a76c776a41580375f28c3418e">pos_actual_</a>;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classTrack_adfb43d2910e9edb22423976318ceb1c6.html#adfb43d2910e9edb22423976318ceb1c6">   17</a></span>&#160;    std::vector&lt; std::pair&lt;unsigned int, unsigned int&gt; &gt; <a class="code" href="classTrack_adfb43d2910e9edb22423976318ceb1c6.html#adfb43d2910e9edb22423976318ceb1c6">track_</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classTrack_a8c4bcd0998c43db3f70ff7a11dbd1e31.html#a8c4bcd0998c43db3f70ff7a11dbd1e31">   19</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTrack_a8c4bcd0998c43db3f70ff7a11dbd1e31.html#a8c4bcd0998c43db3f70ff7a11dbd1e31">cost_</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classTrack_a4c16073370fc8294ca8149a2a225a8e1.html#a4c16073370fc8294ca8149a2a225a8e1">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classTrack_a4c16073370fc8294ca8149a2a225a8e1.html#a4c16073370fc8294ca8149a2a225a8e1">n_steps_</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classTrack_a11457bcda8be04595018c11173d8241c.html#a11457bcda8be04595018c11173d8241c">Track</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classTrack_a11457bcda8be04595018c11173d8241c.html#a11457bcda8be04595018c11173d8241c">Track</a>(<span class="keyword">const</span> <a class="code" href="classTrack.html">Track</a>&amp; T);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classTrack_a416e75e66accc8eb9e3fafc3e8555216.html#a416e75e66accc8eb9e3fafc3e8555216">~Track</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; <a class="code" href="classTrack_a72179d023dafa7d668e689c3655ec05a.html#a72179d023dafa7d668e689c3655ec05a">getPos_actual_</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTrack_a83634e112312b239232369e934537519.html#a83634e112312b239232369e934537519">getCost_</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTrack_ad39668755d258d190e7f0462a2e47c38.html#ad39668755d258d190e7f0462a2e47c38">setCost_</a>(<span class="keywordtype">float</span> cost_);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classTrack_a2b01ad13e389388b33634d31c56c06fb.html#a2b01ad13e389388b33634d31c56c06fb">getN_steps_</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTrack_ab21eca57ac33342a76c06aa6bf78baf6.html#ab21eca57ac33342a76c06aa6bf78baf6">append</a>(std::pair&lt;unsigned int, unsigned int&gt; pos);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTrack_aac8363ee2fb1b780cbd12f06d4696c4f.html#aac8363ee2fb1b780cbd12f06d4696c4f">front_append</a>(std::pair&lt;unsigned int, unsigned int&gt; pos);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; <a class="code" href="classTrack_a16cba911a9319d6e3a4558224a0663ac.html#a16cba911a9319d6e3a4558224a0663ac">get_last</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTrack_a734549f48aeea30b2ff206e0dae9990d.html#a734549f48aeea30b2ff206e0dae9990d">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="classTrack.html">Track</a>&amp; rhs) <span class="keyword">const</span>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTrack_a2834d9e4cab3cd409c6c9b19421323bb.html#a2834d9e4cab3cd409c6c9b19421323bb">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="classTrack.html">Track</a>&amp; rhs) <span class="keyword">const</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTrack_a66b41fca4f7fe84d6fd0bdae97a855a4.html#a66b41fca4f7fe84d6fd0bdae97a855a4">operator&lt;=</a>(<span class="keyword">const</span> <a class="code" href="classTrack.html">Track</a>&amp; rhs) <span class="keyword">const</span>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTrack_a9eb7467321141a22a01b59fb91d9969e.html#a9eb7467321141a22a01b59fb91d9969e">operator&gt;=</a>(<span class="keyword">const</span> <a class="code" href="classTrack.html">Track</a>&amp; rhs) <span class="keyword">const</span>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTrack_a2f9365cd7e2d46073595cf603225826c.html#a2f9365cd7e2d46073595cf603225826c">equivalent</a>(<span class="keyword">const</span> <a class="code" href="classTrack.html">Track</a>&amp; rhs) <span class="keyword">const</span>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTrack_a7e3f642db7533e3cb24b777c4a43835f.html#a7e3f642db7533e3cb24b777c4a43835f">start_track</a>();</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::pair&lt;unsigned int, unsigned int&gt; <a class="code" href="classTrack_a061a428c0dbac101828add9a1b566ce9.html#a061a428c0dbac101828add9a1b566ce9">next_step</a>(<span class="keywordtype">int</span> i);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div><div class="ttc" id="classTrack_a7e3f642db7533e3cb24b777c4a43835f_html_a7e3f642db7533e3cb24b777c4a43835f"><div class="ttname"><a href="classTrack_a7e3f642db7533e3cb24b777c4a43835f.html#a7e3f642db7533e3cb24b777c4a43835f">Track::start_track</a></div><div class="ttdeci">void start_track()</div><div class="ttdoc">Método para iniciar el recorrido sobre el camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:80</div></div>
+<div class="ttc" id="classTrack_a83634e112312b239232369e934537519_html_a83634e112312b239232369e934537519"><div class="ttname"><a href="classTrack_a83634e112312b239232369e934537519.html#a83634e112312b239232369e934537519">Track::getCost_</a></div><div class="ttdeci">float getCost_() const </div><div class="ttdoc">Método getter para obtener el número de filas. </div><div class="ttdef"><b>Definition:</b> Track.cpp:23</div></div>
+<div class="ttc" id="classTrack_aac8363ee2fb1b780cbd12f06d4696c4f_html_aac8363ee2fb1b780cbd12f06d4696c4f"><div class="ttname"><a href="classTrack_aac8363ee2fb1b780cbd12f06d4696c4f.html#aac8363ee2fb1b780cbd12f06d4696c4f">Track::front_append</a></div><div class="ttdeci">void front_append(std::pair&lt; unsigned int, unsigned int &gt; pos)</div><div class="ttdoc">Método insertar por el principio. </div><div class="ttdef"><b>Definition:</b> Track.cpp:44</div></div>
+<div class="ttc" id="classTrack_a2b01ad13e389388b33634d31c56c06fb_html_a2b01ad13e389388b33634d31c56c06fb"><div class="ttname"><a href="classTrack_a2b01ad13e389388b33634d31c56c06fb.html#a2b01ad13e389388b33634d31c56c06fb">Track::getN_steps_</a></div><div class="ttdeci">int getN_steps_() const </div><div class="ttdoc">Método getter para obtener el número de pasos del camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:33</div></div>
+<div class="ttc" id="classTrack_a8c4bcd0998c43db3f70ff7a11dbd1e31_html_a8c4bcd0998c43db3f70ff7a11dbd1e31"><div class="ttname"><a href="classTrack_a8c4bcd0998c43db3f70ff7a11dbd1e31.html#a8c4bcd0998c43db3f70ff7a11dbd1e31">Track::cost_</a></div><div class="ttdeci">float cost_</div><div class="ttdef"><b>Definition:</b> Track.h:19</div></div>
+<div class="ttc" id="classTrack_ad39668755d258d190e7f0462a2e47c38_html_ad39668755d258d190e7f0462a2e47c38"><div class="ttname"><a href="classTrack_ad39668755d258d190e7f0462a2e47c38.html#ad39668755d258d190e7f0462a2e47c38">Track::setCost_</a></div><div class="ttdeci">void setCost_(float cost_)</div><div class="ttdoc">Método setter para modificar el coste del camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:28</div></div>
+<div class="ttc" id="classTrack_a16cba911a9319d6e3a4558224a0663ac_html_a16cba911a9319d6e3a4558224a0663ac"><div class="ttname"><a href="classTrack_a16cba911a9319d6e3a4558224a0663ac.html#a16cba911a9319d6e3a4558224a0663ac">Track::get_last</a></div><div class="ttdeci">std::pair&lt; unsigned int, unsigned int &gt; get_last() const </div><div class="ttdoc">Método getter para obtener la última posicíon del camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:50</div></div>
+<div class="ttc" id="classTrack_a11457bcda8be04595018c11173d8241c_html_a11457bcda8be04595018c11173d8241c"><div class="ttname"><a href="classTrack_a11457bcda8be04595018c11173d8241c.html#a11457bcda8be04595018c11173d8241c">Track::Track</a></div><div class="ttdeci">Track()</div><div class="ttdoc">Constructor por defecto de la clase &amp;#39;Track&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Track.cpp:3</div></div>
+<div class="ttc" id="classTrack_a72179d023dafa7d668e689c3655ec05a_html_a72179d023dafa7d668e689c3655ec05a"><div class="ttname"><a href="classTrack_a72179d023dafa7d668e689c3655ec05a.html#a72179d023dafa7d668e689c3655ec05a">Track::getPos_actual_</a></div><div class="ttdeci">std::pair&lt; unsigned int, unsigned int &gt; getPos_actual_() const </div><div class="ttdoc">Método getter para obtener la posición actual dentro del camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:18</div></div>
+<div class="ttc" id="classTrack_a061a428c0dbac101828add9a1b566ce9_html_a061a428c0dbac101828add9a1b566ce9"><div class="ttname"><a href="classTrack_a061a428c0dbac101828add9a1b566ce9.html#a061a428c0dbac101828add9a1b566ce9">Track::next_step</a></div><div class="ttdeci">std::pair&lt; unsigned int, unsigned int &gt; next_step(int i)</div><div class="ttdoc">Método para obtener el siguiente paso a dar en el camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:85</div></div>
+<div class="ttc" id="classTrack_a66b41fca4f7fe84d6fd0bdae97a855a4_html_a66b41fca4f7fe84d6fd0bdae97a855a4"><div class="ttname"><a href="classTrack_a66b41fca4f7fe84d6fd0bdae97a855a4.html#a66b41fca4f7fe84d6fd0bdae97a855a4">Track::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const Track &amp;rhs) const </div><div class="ttdoc">Sobrecarga del operador &lt;=. </div><div class="ttdef"><b>Definition:</b> Track.cpp:65</div></div>
+<div class="ttc" id="classTrack_a416e75e66accc8eb9e3fafc3e8555216_html_a416e75e66accc8eb9e3fafc3e8555216"><div class="ttname"><a href="classTrack_a416e75e66accc8eb9e3fafc3e8555216.html#a416e75e66accc8eb9e3fafc3e8555216">Track::~Track</a></div><div class="ttdeci">~Track()</div><div class="ttdoc">Destructor de la clase &amp;#39;Track&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Track.cpp:15</div></div>
+<div class="ttc" id="classTrack_a2834d9e4cab3cd409c6c9b19421323bb_html_a2834d9e4cab3cd409c6c9b19421323bb"><div class="ttname"><a href="classTrack_a2834d9e4cab3cd409c6c9b19421323bb.html#a2834d9e4cab3cd409c6c9b19421323bb">Track::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Track &amp;rhs) const </div><div class="ttdoc">Sobrecarga del operador &gt;. </div><div class="ttdef"><b>Definition:</b> Track.cpp:60</div></div>
+<div class="ttc" id="classTrack_adfb43d2910e9edb22423976318ceb1c6_html_adfb43d2910e9edb22423976318ceb1c6"><div class="ttname"><a href="classTrack_adfb43d2910e9edb22423976318ceb1c6.html#adfb43d2910e9edb22423976318ceb1c6">Track::track_</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; unsigned int, unsigned int &gt; &gt; track_</div><div class="ttdef"><b>Definition:</b> Track.h:17</div></div>
+<div class="ttc" id="classTrack_ab21eca57ac33342a76c06aa6bf78baf6_html_ab21eca57ac33342a76c06aa6bf78baf6"><div class="ttname"><a href="classTrack_ab21eca57ac33342a76c06aa6bf78baf6.html#ab21eca57ac33342a76c06aa6bf78baf6">Track::append</a></div><div class="ttdeci">void append(std::pair&lt; unsigned int, unsigned int &gt; pos)</div><div class="ttdoc">Método insertar por el final. </div><div class="ttdef"><b>Definition:</b> Track.cpp:38</div></div>
+<div class="ttc" id="classTrack_a1cc93d8a76c776a41580375f28c3418e_html_a1cc93d8a76c776a41580375f28c3418e"><div class="ttname"><a href="classTrack_a1cc93d8a76c776a41580375f28c3418e.html#a1cc93d8a76c776a41580375f28c3418e">Track::pos_actual_</a></div><div class="ttdeci">std::pair&lt; unsigned int, unsigned int &gt; pos_actual_</div><div class="ttdef"><b>Definition:</b> Track.h:15</div></div>
+<div class="ttc" id="classTrack_a4c16073370fc8294ca8149a2a225a8e1_html_a4c16073370fc8294ca8149a2a225a8e1"><div class="ttname"><a href="classTrack_a4c16073370fc8294ca8149a2a225a8e1.html#a4c16073370fc8294ca8149a2a225a8e1">Track::n_steps_</a></div><div class="ttdeci">int n_steps_</div><div class="ttdef"><b>Definition:</b> Track.h:21</div></div>
+<div class="ttc" id="classTrack_a9eb7467321141a22a01b59fb91d9969e_html_a9eb7467321141a22a01b59fb91d9969e"><div class="ttname"><a href="classTrack_a9eb7467321141a22a01b59fb91d9969e.html#a9eb7467321141a22a01b59fb91d9969e">Track::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const Track &amp;rhs) const </div><div class="ttdoc">Sobrecarga del operador &gt;=. </div><div class="ttdef"><b>Definition:</b> Track.cpp:70</div></div>
+<div class="ttc" id="classTrack_html"><div class="ttname"><a href="classTrack.html">Track</a></div><div class="ttdoc">Clase que representa un camino en la matriz. Conjunto ordenado de posiciones. </div><div class="ttdef"><b>Definition:</b> Track.h:10</div></div>
+<div class="ttc" id="classTrack_a2f9365cd7e2d46073595cf603225826c_html_a2f9365cd7e2d46073595cf603225826c"><div class="ttname"><a href="classTrack_a2f9365cd7e2d46073595cf603225826c.html#a2f9365cd7e2d46073595cf603225826c">Track::equivalent</a></div><div class="ttdeci">bool equivalent(const Track &amp;rhs) const </div><div class="ttdoc">Método para hallar la equivalencia con un camino. </div><div class="ttdef"><b>Definition:</b> Track.cpp:75</div></div>
+<div class="ttc" id="classTrack_a734549f48aeea30b2ff206e0dae9990d_html_a734549f48aeea30b2ff206e0dae9990d"><div class="ttname"><a href="classTrack_a734549f48aeea30b2ff206e0dae9990d.html#a734549f48aeea30b2ff206e0dae9990d">Track::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Track &amp;rhs) const </div><div class="ttdoc">Sobrecarga del operador &lt;. </div><div class="ttdef"><b>Definition:</b> Track.cpp:55</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="Track_8h.html">Track.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Práctica Inteligencia Artificial: Simulación de Coche Autónomo: Fichero Fuente Matrix.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica Inteligencia Artificial: Simulación de Coche Autónomo
+   </div>
+   <div id="projectbrief">Simulacíon de un coche autónomo mediante algoritmos de búsqueda.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Matrix_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Matrix.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Matrix_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MatrixObject_8h.html">MatrixObject.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Car_8h.html">Car.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Block_8h.html">Block.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Empty_8h.html">Empty.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="End_8h.html">End.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="node_8h.html">node.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Track_8h.html">Track.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Librerias para generacion aleatoria</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Libreria para comprobar si una cadena es numerica</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Libreria para ordenar el vector</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classMatrix.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMatrix.html">Matrix</a></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classMatrix_a301246c1d922966744279b698e923e68.html#a301246c1d922966744279b698e923e68">   36</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classMatrix_a301246c1d922966744279b698e923e68.html#a301246c1d922966744279b698e923e68">m_</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classMatrix_ad9e95c2743b5120d35d83c362fc75d08.html#ad9e95c2743b5120d35d83c362fc75d08">   38</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classMatrix_ad9e95c2743b5120d35d83c362fc75d08.html#ad9e95c2743b5120d35d83c362fc75d08">n_</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classMatrix_a18e8a381e5103f118465fe5ef4add822.html#a18e8a381e5103f118465fe5ef4add822">   40</a></span>&#160;    std::vector&lt; std::vector &lt;MatrixObject*&gt; &gt; <a class="code" href="classMatrix_a18e8a381e5103f118465fe5ef4add822.html#a18e8a381e5103f118465fe5ef4add822">V_</a>;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classMatrix_a8502869bb1dc8b2584cd8309f7540af5.html#a8502869bb1dc8b2584cd8309f7540af5">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMatrix_a8502869bb1dc8b2584cd8309f7540af5.html#a8502869bb1dc8b2584cd8309f7540af5">pos_x_coche_</a>;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classMatrix_a29e384f11f092788b7d77820ba9d04e1.html#a29e384f11f092788b7d77820ba9d04e1">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMatrix_a29e384f11f092788b7d77820ba9d04e1.html#a29e384f11f092788b7d77820ba9d04e1">pos_y_coche_</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classMatrix_ae7288a5282461ae339a666770f01528c.html#ae7288a5282461ae339a666770f01528c">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMatrix_ae7288a5282461ae339a666770f01528c.html#ae7288a5282461ae339a666770f01528c">pos_x_end_</a>;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classMatrix_a4ba3087528442cebde81bd914db7f7f8.html#a4ba3087528442cebde81bd914db7f7f8">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMatrix_a4ba3087528442cebde81bd914db7f7f8.html#a4ba3087528442cebde81bd914db7f7f8">pos_y_end_</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classMatrix_a2dba13c45127354c9f75ef576f49269b.html#a2dba13c45127354c9f75ef576f49269b">Matrix</a>();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classMatrix_a2dba13c45127354c9f75ef576f49269b.html#a2dba13c45127354c9f75ef576f49269b">Matrix</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classMatrix_a9b1c3627f573d78a2f08623fdfef990f.html#a9b1c3627f573d78a2f08623fdfef990f">~Matrix</a>();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classMatrix_a6d74cd494fe4f54ea901af0522721767.html#a6d74cd494fe4f54ea901af0522721767">get_m</a>();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classMatrix_a0d08e5625ba7b93096c43de1abcde108.html#a0d08e5625ba7b93096c43de1abcde108">get_n</a>();</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classMatrixObject.html">MatrixObject</a>* <a class="code" href="classMatrix_a9c76659fc6cedcd5aa363aab34e80e64.html#a9c76659fc6cedcd5aa363aab34e80e64">get_celda</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::vector&lt;int&gt; <a class="code" href="classMatrix_a5c752738b8bba870d51a12b3ffb6b5ea.html#a5c752738b8bba870d51a12b3ffb6b5ea">get_pos_car</a>();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMatrix_abeeb33c10a3aa47d7bcb8e5fd90f2260.html#abeeb33c10a3aa47d7bcb8e5fd90f2260">set_pos_car</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> i);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMatrix_a758b66c184533caf26754377c883941b.html#a758b66c184533caf26754377c883941b">random_fill_matrix</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> percent);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMatrix_a6d5668cbea5c7d7846e70a30183a3df9.html#a6d5668cbea5c7d7846e70a30183a3df9">manual_fill_matrix</a>();</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMatrix_a22785622628475628065ee8730449b59.html#a22785622628475628065ee8730449b59">locate_car</a>(std::string pos_car);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMatrix_a1a4b1d57cd0894ff42db5b0b0fe2ee57.html#a1a4b1d57cd0894ff42db5b0b0fe2ee57">locate_endPoint</a>(std::string pos_end);      <span class="comment">// Posicionamiento del destino del coche</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMatrix_a5eafdd29e80b9b0a3aceb1e4e38050e6.html#a5eafdd29e80b9b0a3aceb1e4e38050e6">show</a>();            <span class="comment">// Mostrar por pantalla la matriz</span></div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="classTrack.html">Track</a> <a class="code" href="classMatrix_a3be352f8adee2dcfcfc87532d0e9cbc3.html#a3be352f8adee2dcfcfc87532d0e9cbc3">A_estrella</a>();</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div><div class="ttc" id="Car_8h_html"><div class="ttname"><a href="Car_8h.html">Car.h</a></div></div>
+<div class="ttc" id="node_8h_html"><div class="ttname"><a href="node_8h.html">node.h</a></div></div>
+<div class="ttc" id="classMatrix_a0d08e5625ba7b93096c43de1abcde108_html_a0d08e5625ba7b93096c43de1abcde108"><div class="ttname"><a href="classMatrix_a0d08e5625ba7b93096c43de1abcde108.html#a0d08e5625ba7b93096c43de1abcde108">Matrix::get_n</a></div><div class="ttdeci">unsigned int get_n()</div><div class="ttdoc">Método getter para obtener el número de columnas. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:37</div></div>
+<div class="ttc" id="classMatrix_ad9e95c2743b5120d35d83c362fc75d08_html_ad9e95c2743b5120d35d83c362fc75d08"><div class="ttname"><a href="classMatrix_ad9e95c2743b5120d35d83c362fc75d08.html#ad9e95c2743b5120d35d83c362fc75d08">Matrix::n_</a></div><div class="ttdeci">unsigned int n_</div><div class="ttdef"><b>Definition:</b> Matrix.h:38</div></div>
+<div class="ttc" id="classMatrix_a29e384f11f092788b7d77820ba9d04e1_html_a29e384f11f092788b7d77820ba9d04e1"><div class="ttname"><a href="classMatrix_a29e384f11f092788b7d77820ba9d04e1.html#a29e384f11f092788b7d77820ba9d04e1">Matrix::pos_y_coche_</a></div><div class="ttdeci">int pos_y_coche_</div><div class="ttdef"><b>Definition:</b> Matrix.h:44</div></div>
+<div class="ttc" id="classMatrix_a6d5668cbea5c7d7846e70a30183a3df9_html_a6d5668cbea5c7d7846e70a30183a3df9"><div class="ttname"><a href="classMatrix_a6d5668cbea5c7d7846e70a30183a3df9.html#a6d5668cbea5c7d7846e70a30183a3df9">Matrix::manual_fill_matrix</a></div><div class="ttdeci">void manual_fill_matrix()</div><div class="ttdoc">Método que rellena la matriz. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:80</div></div>
+<div class="ttc" id="classMatrix_a22785622628475628065ee8730449b59_html_a22785622628475628065ee8730449b59"><div class="ttname"><a href="classMatrix_a22785622628475628065ee8730449b59.html#a22785622628475628065ee8730449b59">Matrix::locate_car</a></div><div class="ttdeci">bool locate_car(std::string pos_car)</div><div class="ttdoc">Método que introduce al coche en la matriz. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:138</div></div>
+<div class="ttc" id="classMatrix_a2dba13c45127354c9f75ef576f49269b_html_a2dba13c45127354c9f75ef576f49269b"><div class="ttname"><a href="classMatrix_a2dba13c45127354c9f75ef576f49269b.html#a2dba13c45127354c9f75ef576f49269b">Matrix::Matrix</a></div><div class="ttdeci">Matrix()</div><div class="ttdoc">Constructor por defecto de la clase &amp;#39;Matrix&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:4</div></div>
+<div class="ttc" id="classMatrix_a8502869bb1dc8b2584cd8309f7540af5_html_a8502869bb1dc8b2584cd8309f7540af5"><div class="ttname"><a href="classMatrix_a8502869bb1dc8b2584cd8309f7540af5.html#a8502869bb1dc8b2584cd8309f7540af5">Matrix::pos_x_coche_</a></div><div class="ttdeci">int pos_x_coche_</div><div class="ttdef"><b>Definition:</b> Matrix.h:42</div></div>
+<div class="ttc" id="classMatrix_a4ba3087528442cebde81bd914db7f7f8_html_a4ba3087528442cebde81bd914db7f7f8"><div class="ttname"><a href="classMatrix_a4ba3087528442cebde81bd914db7f7f8.html#a4ba3087528442cebde81bd914db7f7f8">Matrix::pos_y_end_</a></div><div class="ttdeci">int pos_y_end_</div><div class="ttdef"><b>Definition:</b> Matrix.h:49</div></div>
+<div class="ttc" id="classMatrix_a3be352f8adee2dcfcfc87532d0e9cbc3_html_a3be352f8adee2dcfcfc87532d0e9cbc3"><div class="ttname"><a href="classMatrix_a3be352f8adee2dcfcfc87532d0e9cbc3.html#a3be352f8adee2dcfcfc87532d0e9cbc3">Matrix::A_estrella</a></div><div class="ttdeci">Track A_estrella()</div><div class="ttdoc">Método calcula un camino minimo entre el coche y el destino. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:265</div></div>
+<div class="ttc" id="classMatrix_a18e8a381e5103f118465fe5ef4add822_html_a18e8a381e5103f118465fe5ef4add822"><div class="ttname"><a href="classMatrix_a18e8a381e5103f118465fe5ef4add822.html#a18e8a381e5103f118465fe5ef4add822">Matrix::V_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; MatrixObject * &gt; &gt; V_</div><div class="ttdef"><b>Definition:</b> Matrix.h:40</div></div>
+<div class="ttc" id="classMatrix_a9c76659fc6cedcd5aa363aab34e80e64_html_a9c76659fc6cedcd5aa363aab34e80e64"><div class="ttname"><a href="classMatrix_a9c76659fc6cedcd5aa363aab34e80e64.html#a9c76659fc6cedcd5aa363aab34e80e64">Matrix::get_celda</a></div><div class="ttdeci">MatrixObject * get_celda(int i, int j)</div><div class="ttdoc">Método getter para obtener el contenido de una posición. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:41</div></div>
+<div class="ttc" id="classMatrix_html"><div class="ttname"><a href="classMatrix.html">Matrix</a></div><div class="ttdoc">Clase que representa a una matriz para representar gráficamente el entorno. </div><div class="ttdef"><b>Definition:</b> Matrix.h:30</div></div>
+<div class="ttc" id="classMatrix_a5c752738b8bba870d51a12b3ffb6b5ea_html_a5c752738b8bba870d51a12b3ffb6b5ea"><div class="ttname"><a href="classMatrix_a5c752738b8bba870d51a12b3ffb6b5ea.html#a5c752738b8bba870d51a12b3ffb6b5ea">Matrix::get_pos_car</a></div><div class="ttdeci">std::vector&lt; int &gt; get_pos_car()</div><div class="ttdoc">Método getter para obtener la posición del coche. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:45</div></div>
+<div class="ttc" id="classMatrix_a1a4b1d57cd0894ff42db5b0b0fe2ee57_html_a1a4b1d57cd0894ff42db5b0b0fe2ee57"><div class="ttname"><a href="classMatrix_a1a4b1d57cd0894ff42db5b0b0fe2ee57.html#a1a4b1d57cd0894ff42db5b0b0fe2ee57">Matrix::locate_endPoint</a></div><div class="ttdeci">bool locate_endPoint(std::string pos_end)</div><div class="ttdoc">Método que introduce el punto de destino del coche en la matriz. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:188</div></div>
+<div class="ttc" id="classMatrixObject_html"><div class="ttname"><a href="classMatrixObject.html">MatrixObject</a></div><div class="ttdoc">Clase abstracta que representa a cada una de las posiciones de la matriz. </div><div class="ttdef"><b>Definition:</b> MatrixObject.h:10</div></div>
+<div class="ttc" id="classMatrix_a6d74cd494fe4f54ea901af0522721767_html_a6d74cd494fe4f54ea901af0522721767"><div class="ttname"><a href="classMatrix_a6d74cd494fe4f54ea901af0522721767.html#a6d74cd494fe4f54ea901af0522721767">Matrix::get_m</a></div><div class="ttdeci">unsigned int get_m()</div><div class="ttdoc">Método getter para obtener el número de filas. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:33</div></div>
+<div class="ttc" id="classMatrix_a5eafdd29e80b9b0a3aceb1e4e38050e6_html_a5eafdd29e80b9b0a3aceb1e4e38050e6"><div class="ttname"><a href="classMatrix_a5eafdd29e80b9b0a3aceb1e4e38050e6.html#a5eafdd29e80b9b0a3aceb1e4e38050e6">Matrix::show</a></div><div class="ttdeci">void show()</div><div class="ttdoc">Método para mostrar por pantalla la matriz. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:236</div></div>
+<div class="ttc" id="classMatrix_a9b1c3627f573d78a2f08623fdfef990f_html_a9b1c3627f573d78a2f08623fdfef990f"><div class="ttname"><a href="classMatrix_a9b1c3627f573d78a2f08623fdfef990f.html#a9b1c3627f573d78a2f08623fdfef990f">Matrix::~Matrix</a></div><div class="ttdeci">~Matrix()</div><div class="ttdoc">Destructor de la clase &amp;#39;Matrix&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:30</div></div>
+<div class="ttc" id="classMatrix_a301246c1d922966744279b698e923e68_html_a301246c1d922966744279b698e923e68"><div class="ttname"><a href="classMatrix_a301246c1d922966744279b698e923e68.html#a301246c1d922966744279b698e923e68">Matrix::m_</a></div><div class="ttdeci">unsigned int m_</div><div class="ttdef"><b>Definition:</b> Matrix.h:36</div></div>
+<div class="ttc" id="Empty_8h_html"><div class="ttname"><a href="Empty_8h.html">Empty.h</a></div></div>
+<div class="ttc" id="classMatrix_ae7288a5282461ae339a666770f01528c_html_ae7288a5282461ae339a666770f01528c"><div class="ttname"><a href="classMatrix_ae7288a5282461ae339a666770f01528c.html#ae7288a5282461ae339a666770f01528c">Matrix::pos_x_end_</a></div><div class="ttdeci">int pos_x_end_</div><div class="ttdef"><b>Definition:</b> Matrix.h:47</div></div>
+<div class="ttc" id="Track_8h_html"><div class="ttname"><a href="Track_8h.html">Track.h</a></div></div>
+<div class="ttc" id="classTrack_html"><div class="ttname"><a href="classTrack.html">Track</a></div><div class="ttdoc">Clase que representa un camino en la matriz. Conjunto ordenado de posiciones. </div><div class="ttdef"><b>Definition:</b> Track.h:10</div></div>
+<div class="ttc" id="classMatrix_abeeb33c10a3aa47d7bcb8e5fd90f2260_html_abeeb33c10a3aa47d7bcb8e5fd90f2260"><div class="ttname"><a href="classMatrix_abeeb33c10a3aa47d7bcb8e5fd90f2260.html#abeeb33c10a3aa47d7bcb8e5fd90f2260">Matrix::set_pos_car</a></div><div class="ttdeci">void set_pos_car(int x, int i)</div><div class="ttdoc">Método setter para modificar la posición del coche. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:52</div></div>
+<div class="ttc" id="classMatrix_a758b66c184533caf26754377c883941b_html_a758b66c184533caf26754377c883941b"><div class="ttname"><a href="classMatrix_a758b66c184533caf26754377c883941b.html#a758b66c184533caf26754377c883941b">Matrix::random_fill_matrix</a></div><div class="ttdeci">void random_fill_matrix(unsigned int percent)</div><div class="ttdoc">Método que rellena la matriz. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:57</div></div>
+<div class="ttc" id="Block_8h_html"><div class="ttname"><a href="Block_8h.html">Block.h</a></div></div>
+<div class="ttc" id="End_8h_html"><div class="ttname"><a href="End_8h.html">End.h</a></div></div>
+<div class="ttc" id="MatrixObject_8h_html"><div class="ttname"><a href="MatrixObject_8h.html">MatrixObject.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="Matrix_8h.html">Matrix.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

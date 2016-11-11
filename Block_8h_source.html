@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Práctica Inteligencia Artificial: Simulación de Coche Autónomo: Fichero Fuente Block.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica Inteligencia Artificial: Simulación de Coche Autónomo
+   </div>
+   <div id="projectbrief">Simulacíon de un coche autónomo mediante algoritmos de búsqueda.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Block_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Block.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Block_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="MatrixObject_8h.html">MatrixObject.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classBlock.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBlock.html">Block</a> : <span class="keyword">public</span> <a class="code" href="classMatrixObject.html">MatrixObject</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classBlock_a37658a946bf5067ad01d68d9ff086adc.html#a37658a946bf5067ad01d68d9ff086adc">Block</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classBlock_a37658a946bf5067ad01d68d9ff086adc.html#a37658a946bf5067ad01d68d9ff086adc">Block</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classMatrixObject_a677277761e1536df147ff0b9e56b98c7.html#a677277761e1536df147ff0b9e56b98c7">x_</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classMatrixObject_abed865b53b679dc9f5cf574756084484.html#abed865b53b679dc9f5cf574756084484">y_</a>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classBlock_a37658a946bf5067ad01d68d9ff086adc.html#a37658a946bf5067ad01d68d9ff086adc">Block</a>(<span class="keyword">const</span> <a class="code" href="classMatrixObject.html">MatrixObject</a>&amp; MO);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classBlock_a8e35c9089e806962b83bca4e5e288142.html#a8e35c9089e806962b83bca4e5e288142">~Block</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classBlock_af580d3181b1c286f0ddc345b667a9193.html#af580d3181b1c286f0ddc345b667a9193">is_empty</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classBlock_a6643178b92b29508ffffb03d14d36851.html#a6643178b92b29508ffffb03d14d36851">show</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classBlock_a35861573683abd18cea0b8302c5cb66c.html#a35861573683abd18cea0b8302c5cb66c">is_end</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classBlock_af6f0471b7aaf4404242daf332ef338a7.html#af6f0471b7aaf4404242daf332ef338a7">is_block</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div><div class="ttc" id="classBlock_af6f0471b7aaf4404242daf332ef338a7_html_af6f0471b7aaf4404242daf332ef338a7"><div class="ttname"><a href="classBlock_af6f0471b7aaf4404242daf332ef338a7.html#af6f0471b7aaf4404242daf332ef338a7">Block::is_block</a></div><div class="ttdeci">virtual bool is_block() override</div><div class="ttdoc">Método que devuelve si la clase es de tipo &amp;#39;Block&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Block.cpp:33</div></div>
+<div class="ttc" id="classMatrixObject_abed865b53b679dc9f5cf574756084484_html_abed865b53b679dc9f5cf574756084484"><div class="ttname"><a href="classMatrixObject_abed865b53b679dc9f5cf574756084484.html#abed865b53b679dc9f5cf574756084484">MatrixObject::y_</a></div><div class="ttdeci">int y_</div><div class="ttdef"><b>Definition:</b> MatrixObject.h:18</div></div>
+<div class="ttc" id="classBlock_a6643178b92b29508ffffb03d14d36851_html_a6643178b92b29508ffffb03d14d36851"><div class="ttname"><a href="classBlock_a6643178b92b29508ffffb03d14d36851.html#a6643178b92b29508ffffb03d14d36851">Block::show</a></div><div class="ttdeci">virtual void show() override</div><div class="ttdoc">Método para mostrar por pantalla el contenido de la clase &amp;#39;Block&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Block.cpp:23</div></div>
+<div class="ttc" id="classBlock_af580d3181b1c286f0ddc345b667a9193_html_af580d3181b1c286f0ddc345b667a9193"><div class="ttname"><a href="classBlock_af580d3181b1c286f0ddc345b667a9193.html#af580d3181b1c286f0ddc345b667a9193">Block::is_empty</a></div><div class="ttdeci">virtual bool is_empty() override</div><div class="ttdoc">Método que devuelve si la clase es de tipo &amp;#39;Empty&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Block.cpp:18</div></div>
+<div class="ttc" id="classBlock_a35861573683abd18cea0b8302c5cb66c_html_a35861573683abd18cea0b8302c5cb66c"><div class="ttname"><a href="classBlock_a35861573683abd18cea0b8302c5cb66c.html#a35861573683abd18cea0b8302c5cb66c">Block::is_end</a></div><div class="ttdeci">virtual bool is_end() override</div><div class="ttdoc">Método que devuelve si la clase es de tipo &amp;#39;End&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Block.cpp:28</div></div>
+<div class="ttc" id="classBlock_a8e35c9089e806962b83bca4e5e288142_html_a8e35c9089e806962b83bca4e5e288142"><div class="ttname"><a href="classBlock_a8e35c9089e806962b83bca4e5e288142.html#a8e35c9089e806962b83bca4e5e288142">Block::~Block</a></div><div class="ttdeci">virtual ~Block() override</div><div class="ttdoc">Destructor de la clase &amp;#39;Block&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Block.cpp:15</div></div>
+<div class="ttc" id="classMatrixObject_html"><div class="ttname"><a href="classMatrixObject.html">MatrixObject</a></div><div class="ttdoc">Clase abstracta que representa a cada una de las posiciones de la matriz. </div><div class="ttdef"><b>Definition:</b> MatrixObject.h:10</div></div>
+<div class="ttc" id="classMatrixObject_a677277761e1536df147ff0b9e56b98c7_html_a677277761e1536df147ff0b9e56b98c7"><div class="ttname"><a href="classMatrixObject_a677277761e1536df147ff0b9e56b98c7.html#a677277761e1536df147ff0b9e56b98c7">MatrixObject::x_</a></div><div class="ttdeci">int x_</div><div class="ttdef"><b>Definition:</b> MatrixObject.h:16</div></div>
+<div class="ttc" id="classBlock_a37658a946bf5067ad01d68d9ff086adc_html_a37658a946bf5067ad01d68d9ff086adc"><div class="ttname"><a href="classBlock_a37658a946bf5067ad01d68d9ff086adc.html#a37658a946bf5067ad01d68d9ff086adc">Block::Block</a></div><div class="ttdeci">Block()</div><div class="ttdoc">Constructor por defecto de la clase &amp;#39;Block&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Block.cpp:3</div></div>
+<div class="ttc" id="classBlock_html"><div class="ttname"><a href="classBlock.html">Block</a></div><div class="ttdoc">Clase que representa al coche dentro de la matriz. </div><div class="ttdef"><b>Definition:</b> Block.h:10</div></div>
+<div class="ttc" id="MatrixObject_8h_html"><div class="ttname"><a href="MatrixObject_8h.html">MatrixObject.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="Block_8h.html">Block.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

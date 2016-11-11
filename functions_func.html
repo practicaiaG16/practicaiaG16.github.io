@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Práctica Inteligencia Artificial: Simulación de Coche Autónomo: Miembros de las clases - Funciones</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica Inteligencia Artificial: Simulación de Coche Autónomo
+   </div>
+   <div id="projectbrief">Simulacíon de un coche autónomo mediante algoritmos de búsqueda.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li class="current"><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="functions.html"><span>Todo</span></a></li>
+      <li class="current"><a href="functions_func.html"><span>Funciones</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li class="current"><a href="#index_0x7e"><span>~</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>A_estrella()
+: <a class="el" href="classMatrix_a3be352f8adee2dcfcfc87532d0e9cbc3.html#a3be352f8adee2dcfcfc87532d0e9cbc3">Matrix</a>
+</li>
+<li>append()
+: <a class="el" href="classTrack_ab21eca57ac33342a76c06aa6bf78baf6.html#ab21eca57ac33342a76c06aa6bf78baf6">Track</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>Block()
+: <a class="el" href="classBlock_a37658a946bf5067ad01d68d9ff086adc.html#a37658a946bf5067ad01d68d9ff086adc">Block</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>Car()
+: <a class="el" href="classCar_a1c803f7c5038d3e31b368b0d0a35493c.html#a1c803f7c5038d3e31b368b0d0a35493c">Car</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>Empty()
+: <a class="el" href="classEmpty_a5781d064902dfe80b60f06c0db299d52.html#a5781d064902dfe80b60f06c0db299d52">Empty</a>
+</li>
+<li>End()
+: <a class="el" href="classEnd_aaa443c3c8cf7ced86fe7ba071b7aa6c1.html#aaa443c3c8cf7ced86fe7ba071b7aa6c1">End</a>
+</li>
+<li>equivalent()
+: <a class="el" href="classTrack_a2f9365cd7e2d46073595cf603225826c.html#a2f9365cd7e2d46073595cf603225826c">Track</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>front_append()
+: <a class="el" href="classTrack_aac8363ee2fb1b780cbd12f06d4696c4f.html#aac8363ee2fb1b780cbd12f06d4696c4f">Track</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>get_celda()
+: <a class="el" href="classMatrix_a9c76659fc6cedcd5aa363aab34e80e64.html#a9c76659fc6cedcd5aa363aab34e80e64">Matrix</a>
+</li>
+<li>get_last()
+: <a class="el" href="classTrack_a16cba911a9319d6e3a4558224a0663ac.html#a16cba911a9319d6e3a4558224a0663ac">Track</a>
+</li>
+<li>get_m()
+: <a class="el" href="classMatrix_a6d74cd494fe4f54ea901af0522721767.html#a6d74cd494fe4f54ea901af0522721767">Matrix</a>
+</li>
+<li>get_n()
+: <a class="el" href="classMatrix_a0d08e5625ba7b93096c43de1abcde108.html#a0d08e5625ba7b93096c43de1abcde108">Matrix</a>
+</li>
+<li>get_pos_car()
+: <a class="el" href="classMatrix_a5c752738b8bba870d51a12b3ffb6b5ea.html#a5c752738b8bba870d51a12b3ffb6b5ea">Matrix</a>
+</li>
+<li>get_type()
+: <a class="el" href="classMatrixObject_a37bcd0b0395f5b8bbc900c816896a789.html#a37bcd0b0395f5b8bbc900c816896a789">MatrixObject</a>
+</li>
+<li>getCost_()
+: <a class="el" href="classTrack_a83634e112312b239232369e934537519.html#a83634e112312b239232369e934537519">Track</a>
+</li>
+<li>getN_steps_()
+: <a class="el" href="classTrack_a2b01ad13e389388b33634d31c56c06fb.html#a2b01ad13e389388b33634d31c56c06fb">Track</a>
+</li>
+<li>getPos_actual_()
+: <a class="el" href="classTrack_a72179d023dafa7d668e689c3655ec05a.html#a72179d023dafa7d668e689c3655ec05a">Track</a>
+</li>
+<li>getPrioridad()
+: <a class="el" href="classnode_a2ec8412888681698ea47e2ff076e1e2f.html#a2ec8412888681698ea47e2ff076e1e2f">node</a>
+</li>
+<li>getx()
+: <a class="el" href="classnode_a1d1d5bde59015e34092695875d7cab93.html#a1d1d5bde59015e34092695875d7cab93">node</a>
+</li>
+<li>getX_()
+: <a class="el" href="classMatrixObject_a0c27b730ca1f9f39ed75561522431cbd.html#a0c27b730ca1f9f39ed75561522431cbd">MatrixObject</a>
+</li>
+<li>gety()
+: <a class="el" href="classnode_a277c95f3b47b02f0197668133922b24e.html#a277c95f3b47b02f0197668133922b24e">node</a>
+</li>
+<li>getY_()
+: <a class="el" href="classMatrixObject_ad63722bf996bee9707c9611db0b92657.html#ad63722bf996bee9707c9611db0b92657">MatrixObject</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>is_block()
+: <a class="el" href="classBlock_af6f0471b7aaf4404242daf332ef338a7.html#af6f0471b7aaf4404242daf332ef338a7">Block</a>
+, <a class="el" href="classCar_aead782c1ae8a4325fc220c2748f08be9.html#aead782c1ae8a4325fc220c2748f08be9">Car</a>
+, <a class="el" href="classEmpty_afebdef766df1f830004f214592599ead.html#afebdef766df1f830004f214592599ead">Empty</a>
+, <a class="el" href="classEnd_ae2c761844467f286be653ead62c5ffb7.html#ae2c761844467f286be653ead62c5ffb7">End</a>
+, <a class="el" href="classMatrixObject_a034f0d2082a3a055d0e7037259e8ef2b.html#a034f0d2082a3a055d0e7037259e8ef2b">MatrixObject</a>
+</li>
+<li>is_empty()
+: <a class="el" href="classBlock_af580d3181b1c286f0ddc345b667a9193.html#af580d3181b1c286f0ddc345b667a9193">Block</a>
+, <a class="el" href="classCar_aa16356585b1686d5c57156073c8496fe.html#aa16356585b1686d5c57156073c8496fe">Car</a>
+, <a class="el" href="classEmpty_aa80388d65d93f3e1846729a0dc0450e7.html#aa80388d65d93f3e1846729a0dc0450e7">Empty</a>
+, <a class="el" href="classEnd_a67e60abfce11677dd0d7bd9e784d77db.html#a67e60abfce11677dd0d7bd9e784d77db">End</a>
+, <a class="el" href="classMatrixObject_a1230bcc4ebc2027d1a6b1381a460956b.html#a1230bcc4ebc2027d1a6b1381a460956b">MatrixObject</a>
+, <a class="el" href="classNode_ac9f9bc6289fd1e0f99807735d1a042a8.html#ac9f9bc6289fd1e0f99807735d1a042a8">Node</a>
+</li>
+<li>is_end()
+: <a class="el" href="classBlock_a35861573683abd18cea0b8302c5cb66c.html#a35861573683abd18cea0b8302c5cb66c">Block</a>
+, <a class="el" href="classCar_a3ffa6c06187053e90a4a6fb1948561d4.html#a3ffa6c06187053e90a4a6fb1948561d4">Car</a>
+, <a class="el" href="classEmpty_a75ae5d0e5f087169ca5ad4a7ef657bdf.html#a75ae5d0e5f087169ca5ad4a7ef657bdf">Empty</a>
+, <a class="el" href="classEnd_af2e44c56d1416efda881bb777179268e.html#af2e44c56d1416efda881bb777179268e">End</a>
+, <a class="el" href="classMatrixObject_a1adf1a0342b3e300c4b079fe89aab877.html#a1adf1a0342b3e300c4b079fe89aab877">MatrixObject</a>
+, <a class="el" href="classNode_a743a20631a6be31a912c6d5d9a220fbc.html#a743a20631a6be31a912c6d5d9a220fbc">Node</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>locate_car()
+: <a class="el" href="classMatrix_a22785622628475628065ee8730449b59.html#a22785622628475628065ee8730449b59">Matrix</a>
+</li>
+<li>locate_endPoint()
+: <a class="el" href="classMatrix_a1a4b1d57cd0894ff42db5b0b0fe2ee57.html#a1a4b1d57cd0894ff42db5b0b0fe2ee57">Matrix</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>manual_fill_matrix()
+: <a class="el" href="classMatrix_a6d5668cbea5c7d7846e70a30183a3df9.html#a6d5668cbea5c7d7846e70a30183a3df9">Matrix</a>
+</li>
+<li>Matrix()
+: <a class="el" href="classMatrix_a2dba13c45127354c9f75ef576f49269b.html#a2dba13c45127354c9f75ef576f49269b">Matrix</a>
+</li>
+<li>MatrixObject()
+: <a class="el" href="classMatrixObject_a7959565488593c8259c5dc126efc4b2d.html#a7959565488593c8259c5dc126efc4b2d">MatrixObject</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>next_step()
+: <a class="el" href="classTrack_a061a428c0dbac101828add9a1b566ce9.html#a061a428c0dbac101828add9a1b566ce9">Track</a>
+</li>
+<li>Node()
+: <a class="el" href="classNode_a35300635728672d10dc88042dbb98a2d.html#a35300635728672d10dc88042dbb98a2d">Node</a>
+</li>
+<li>node()
+: <a class="el" href="classnode_a5ce2627c203458187e8ef3dc98d512ca.html#a5ce2627c203458187e8ef3dc98d512ca">node</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>operator&lt;()
+: <a class="el" href="classTrack_a734549f48aeea30b2ff206e0dae9990d.html#a734549f48aeea30b2ff206e0dae9990d">Track</a>
+</li>
+<li>operator&lt;=()
+: <a class="el" href="classTrack_a66b41fca4f7fe84d6fd0bdae97a855a4.html#a66b41fca4f7fe84d6fd0bdae97a855a4">Track</a>
+</li>
+<li>operator&gt;()
+: <a class="el" href="classTrack_a2834d9e4cab3cd409c6c9b19421323bb.html#a2834d9e4cab3cd409c6c9b19421323bb">Track</a>
+</li>
+<li>operator&gt;=()
+: <a class="el" href="classTrack_a9eb7467321141a22a01b59fb91d9969e.html#a9eb7467321141a22a01b59fb91d9969e">Track</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>random_fill_matrix()
+: <a class="el" href="classMatrix_a758b66c184533caf26754377c883941b.html#a758b66c184533caf26754377c883941b">Matrix</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>set_pos_car()
+: <a class="el" href="classMatrix_abeeb33c10a3aa47d7bcb8e5fd90f2260.html#abeeb33c10a3aa47d7bcb8e5fd90f2260">Matrix</a>
+</li>
+<li>setCost_()
+: <a class="el" href="classTrack_ad39668755d258d190e7f0462a2e47c38.html#ad39668755d258d190e7f0462a2e47c38">Track</a>
+</li>
+<li>setX_()
+: <a class="el" href="classMatrixObject_a56d289292f37326c0eb6147c40c7a0eb.html#a56d289292f37326c0eb6147c40c7a0eb">MatrixObject</a>
+</li>
+<li>setY_()
+: <a class="el" href="classMatrixObject_ad020aab8f983829f9a565dc282288ebc.html#ad020aab8f983829f9a565dc282288ebc">MatrixObject</a>
+</li>
+<li>show()
+: <a class="el" href="classBlock_a6643178b92b29508ffffb03d14d36851.html#a6643178b92b29508ffffb03d14d36851">Block</a>
+, <a class="el" href="classCar_acca529d2fad9716e550a09b2718db6ce.html#acca529d2fad9716e550a09b2718db6ce">Car</a>
+, <a class="el" href="classEmpty_a2283cebfe1c52a91dff598d7c2a01dec.html#a2283cebfe1c52a91dff598d7c2a01dec">Empty</a>
+, <a class="el" href="classEnd_ae419f4f08c191ff4d1db8b336824bfc3.html#ae419f4f08c191ff4d1db8b336824bfc3">End</a>
+, <a class="el" href="classMatrix_a5eafdd29e80b9b0a3aceb1e4e38050e6.html#a5eafdd29e80b9b0a3aceb1e4e38050e6">Matrix</a>
+, <a class="el" href="classMatrixObject_ada9e3809fa2117a04ac54aaa2d6a1290.html#ada9e3809fa2117a04ac54aaa2d6a1290">MatrixObject</a>
+, <a class="el" href="classNode_a8e66c3cbb63f4ca06413c5ce5c1179ef.html#a8e66c3cbb63f4ca06413c5ce5c1179ef">Node</a>
+</li>
+<li>start_track()
+: <a class="el" href="classTrack_a7e3f642db7533e3cb24b777c4a43835f.html#a7e3f642db7533e3cb24b777c4a43835f">Track</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>Track()
+: <a class="el" href="classTrack_a11457bcda8be04595018c11173d8241c.html#a11457bcda8be04595018c11173d8241c">Track</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~Block()
+: <a class="el" href="classBlock_a8e35c9089e806962b83bca4e5e288142.html#a8e35c9089e806962b83bca4e5e288142">Block</a>
+</li>
+<li>~Car()
+: <a class="el" href="classCar_aff8180594b512f6a6a2a8688ad5bd34e.html#aff8180594b512f6a6a2a8688ad5bd34e">Car</a>
+</li>
+<li>~Empty()
+: <a class="el" href="classEmpty_a5c87c102e196019db639f8905a864ea0.html#a5c87c102e196019db639f8905a864ea0">Empty</a>
+</li>
+<li>~End()
+: <a class="el" href="classEnd_a3b829dcdce80d8acea2008b06774f9d7.html#a3b829dcdce80d8acea2008b06774f9d7">End</a>
+</li>
+<li>~Matrix()
+: <a class="el" href="classMatrix_a9b1c3627f573d78a2f08623fdfef990f.html#a9b1c3627f573d78a2f08623fdfef990f">Matrix</a>
+</li>
+<li>~MatrixObject()
+: <a class="el" href="classMatrixObject_a110ed79c5957ce72a9fcc0fcaf5cab86.html#a110ed79c5957ce72a9fcc0fcaf5cab86">MatrixObject</a>
+</li>
+<li>~Track()
+: <a class="el" href="classTrack_a416e75e66accc8eb9e3fafc3e8555216.html#a416e75e66accc8eb9e3fafc3e8555216">Track</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
